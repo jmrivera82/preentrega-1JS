@@ -1,6 +1,7 @@
 let opcion = 0
 let numpizza = 0
 
+let pizzas =["pizza 4 quesos", "pizza napolitana", "pizza finas hierbas"]
 
 let productos = [
     {nombre: "pizza 4 quesos", precio: 9990, ingredientes :{
@@ -14,18 +15,24 @@ let productos = [
        } }
 ]
 
-function bienvenida(productos){
+function bienvenida(pizzas){
+    let producto = ""
     //alert("consulte nuestra carta")
-    for (const producto of productos){
-       alert(producto)
+    //for (const producto of productos){
+    //   console.log(producto) //Se ven los productos en la consola
+    //   alert(productos.nombre) //undefined
+    pizzas.forEach(pizza => {
+        producto+= pizza + '\n'
+    })
+    alert (producto)
     }
-}
+
 
 //INICIO DEL PROGRAMA
 alert("Bienvenido a Pizza's Cata")
 alert("estos son nuestros productos")
 
-bienvenida(productos)
+bienvenida(pizzas)
 
 do{
     opcion = Number(prompt("\nQue deseas comprar\nOpcion 1 Pizza\nOpción 2 Elige tu promo\nOpción 3 Consultar precios\nOpción 4 Salir"))
