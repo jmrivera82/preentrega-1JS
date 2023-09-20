@@ -11,3 +11,11 @@
 #función de calculo de monto a pagar
 
 #Despedida
+
+##PREENTREGA NUMERO 2 JAVASCRIPT
+
+#Se agrega array de productos 
+
+#opcion de pizza 1 solicita agregar bebida
+
+#imprime boleta al final
