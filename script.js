@@ -86,6 +86,7 @@ function despedida(boleta){
     alert ("Muchas gracias por comprar en Pizza's Cata")
     alert("No olvide su boleta")
     console.log(boleta)
+  
 }
 
 function cancelado (){
