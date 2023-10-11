@@ -42,8 +42,9 @@ do{
 
 function pago(precio, pizza){
     let mediodepago=prompt("Elige tu opción de pago: \n1 Pago efectivo \n2 tarjeta débito \n3 crédito")
-    bebida=1500
+    let bebida=1500
     let boleta = []
+    let total = 0
     boleta.push(pizza)
     boleta.push(precio)
     switch(mediodepago){
